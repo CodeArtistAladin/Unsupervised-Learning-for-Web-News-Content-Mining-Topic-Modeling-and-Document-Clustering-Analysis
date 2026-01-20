@@ -1,0 +1,57 @@
+### **Source 1**
+**Citation:** Oikonomakou, N., & Vazirgiannis, M. (n.d.). **A Review of Web Document Clustering Approaches**. Athens University of Economics & Business.
+**Relevance Explanation:** This paper is highly relevant as it provides an exhaustive survey of **web document clustering**, classifying approaches into text-based, link-based, and hybrid categories. It specifically addresses the use of cluster analysis as a form of **unsupervised classification** to discover hidden similarities and relationships within the dynamic and heterogeneous nature of the Web.
+**Key Contributions:**
+*   Established a comprehensive **taxonomy of web clustering** based on document attributes: text-based (content), link-based (structure), and hybrid (combined).
+*   Provided a thorough **comparative analysis of clustering algorithms** (e.g., K-means, HAC, Graph-based) focusing on quality-complexity tradeoffs and open research issues like incrementality and cluster labeling.
+**Suggested section in report:** **Introduction** or **Theory**
+
+### **Source 2**
+**Citation:** Shah, N., & Mahajan, S. (2012). **Document Clustering: A Detailed Review**. *International Journal of Applied Information Systems (IJAIS)*, 4(5), 10-20.
+**Relevance Explanation:** This review is relevant to **unsupervised learning and text mining**, offering a detailed overview of traditional to heuristic-oriented document clustering methods. It distinguishes document clustering as a subset of data mining that groups similar documents together to facilitate navigation and information retrieval.
+**Key Contributions:**
+*   Detailed the **standard document clustering procedure**, including feature extraction (TF-IDF), document representation (Vector Space Model), and clustering execution.
+*   Conducted an **experimental comparison** of partitioning methods (K-means) and hierarchical techniques (UPGMA), concluding that partitioning is better suited for large datasets due to linear complexity, while hierarchical methods offer better quality for smaller sets.
+**Suggested section in report:** **Algorithm** or **Experiments**
+
+### **Source 3**
+**Citation:** Boley, D., Gini, M., Gross, R., Han, E. H. S., Hastings, K., Karypis, G., Kumar, V., Mobasher, B., & Moore, J. (1999). **Partitioning-based clustering for Web document categorization**. *Decision Support Systems*, 27(3), 329–341.
+**Relevance Explanation:** This paper focuses on **unsupervised categorization of web documents**, specifically targeting the challenge of high-dimensional feature spaces where traditional algorithms often falter. It introduces novel partitioning techniques that do not require pre-specified distance functions, making it highly relevant to **advanced document clustering**.
+**Key Contributions:**
+*   Introduced two new algorithms for high-dimensional web data: **Association Rule Hypergraph Partitioning (ARHP)** and **Principal Direction Divisive Partitioning (PDDP)**.
+*   Demonstrated through experiments on real web data that these **partitioning-based methods scale linearly** and outperform standard distance-based or Bayesian techniques in high-dimensional settings.
+**Suggested section in report:** **Algorithm**
+
+### **Source 4**
+**Citation:** Özgür, A. (2004). ***Supervised and Unsupervised Machine Learning Techniques for Text Document Categorization*** (Master's thesis). Boğaziçi University.
+**Relevance Explanation:** This source is central to both **text mining and unsupervised learning**, providing a direct comparative study between supervised classification and unsupervised clustering. It evaluates the performance of leading algorithms like SVM and K-means across multiple standard document corpora.
+**Key Contributions:**
+*   Discovered that **unsupervised K-means and Bisecting K-means** produce higher quality clusters than the supervised Naive Bayes technique, despite lacking class labels.
+*   Proposed a **hybrid methodology** using unsupervised clustering to improve the manual task of pre-defining categories and labeling training sets, thereby mitigating "inter-indexer inconsistency".
+**Suggested section in report:** **Experiments** or **Discussion**
+
+### **Source 5**
+**Citation:** Hassani, H., Beneki, C., Unger, S., Mazinani, M. T., & Yeganegi, M. R. (2020). **Text Mining in Big Data Analytics**. *Big Data and Cognitive Computing*, 4(1), 1.
+**Relevance Explanation:** This review is relevant to **big data text mining**, examining state-of-the-art techniques for analyzing unstructured textual data from websites, emails, and social media. It categorizes algorithms into supervised and unsupervised learning, highlighting their application in extracting hidden patterns and sentiment.
+**Key Contributions:**
+*   Synthesized text mining applications across **diverse domains**, including opinion mining, sentiment scoring, and argument extraction from political speeches and social media.
+*   Analyzed the **challenges of big data text mining**, such as handling noisy data in email mining and detecting emerging cybersecurity threats through blog mining.
+**Suggested section in report:** **Introduction** or **Discussion**
+
+### **Source 6**
+**Citation:** Hofmann, T. (2001). **Unsupervised Learning by Probabilistic Latent Semantic Analysis**. *Machine Learning*, 42, 177–196.
+**Relevance Explanation:** This paper is a fundamental source for **unsupervised learning and topic modeling**, presenting Probabilistic Latent Semantic Analysis (PLSA) as a more principled alternative to standard LSA. It is specifically designed to handle the latent semantic relationships and polysemy in text data.
+**Key Contributions:**
+*   Developed **Probabilistic Latent Semantic Analysis (PLSA)**, which utilizes a generative latent class model for probabilistic mixture decomposition of count data.
+*   Introduced **Tempered Expectation Maximization (TEM)**, a model-fitting procedure that employs entropic regularization to significantly improve generalization and avoid overfitting on unseen data.
+**Suggested section in report:** **Theory** or **Algorithm**
+
+### **Source 7**
+**Citation:** Wang, J., Huang, Y., Wu, G., & Zhang, F. (1999). **Web Mining: Knowledge Discovery on the Web**. *Proceedings of the 1999 IEEE International Conference on Systems, Man, and Cybernetics*, 2, 137-141.
+**Relevance Explanation:** This paper is highly relevant to **web mining and document categorization**, providing a foundational definition and taxonomy of web mining domain. it explores content mining, structure mining, and the role of clustering in organizing search results.
+**Key Contributions:**
+*   Proposed a **formal taxonomy of web mining**, distinguishing between content mining (text/multimedia) and structure mining (hyperlinks/URLs).
+*   Introduced the concept of the **"document cube"** for multi-dimensional analysis, allowing users to explore document resources from various viewpoints like subject, date, and author.
+**Suggested section in report:** **Introduction** or **Theory**
+
+*(Note: The source "An Inventory Decision Model When Demand Follows Innovation Diffusion Process under Effect of Technological Substitution" was ignored as it is related to inventory management and marketing diffusion, not text mining or unsupervised learning in the context of your report.)*

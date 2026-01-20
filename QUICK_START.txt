@@ -1,0 +1,176 @@
+QUICK START GUIDE
+=================
+
+This document provides the quickest way to get started with the project.
+
+
+STEP 1: INSTALL DEPENDENCIES
+=============================
+
+Open PowerShell or Command Prompt and run:
+
+    pip install -r requirements.txt
+
+
+STEP 2: RUN THE COMPLETE PIPELINE
+==================================
+
+Option A - Recommended (Single Command):
+
+    python run_pipeline.py
+
+    This will execute all 4 steps automatically.
+
+
+Option B - Individual Steps:
+
+    python scripts/preprocess.py
+    python scripts/topic_model.py
+    python scripts/cluster.py
+    python scripts/visualize.py
+
+
+Option C - Manual Step-by-Step (for debugging):
+
+    1. Navigate to project folder:
+       cd "S:\university\7th semeseter\web mining\Final Project"
+    
+    2. Run step 1:
+       python scripts/preprocess.py
+       (Wait for completion, then continue)
+    
+    3. Run step 2:
+       python scripts/topic_model.py
+       (Wait for completion, then continue)
+    
+    4. Run step 3:
+       python scripts/cluster.py
+       (Wait for completion, then continue)
+    
+    5. Run step 4:
+       python scripts/visualize.py
+
+
+STEP 3: REVIEW RESULTS
+======================
+
+After execution is complete:
+
+1. Check console output for statistics
+2. View visualizations:
+   - Open any .png file in results/ folder
+   
+3. Analyze data:
+   - Open final_results.csv in Excel
+   - Use Python to analyze the CSV files
+
+4. Read documentation:
+   - README.md (complete guide)
+   - HYPERPARAMETERS.md (how to customize)
+   - FINAL_SUMMARY.txt (what was done)
+
+
+EXPECTED OUTPUT
+===============
+
+Console will show:
+  ✓ Document count and statistics
+  ✓ Topics extracted with keywords
+  ✓ Cluster distribution
+  ✓ File locations where outputs saved
+
+Files created:
+  - 5 CSV files in data/ folder
+  - 12+ PNG images in results/ folder
+  - LDA model in results/lda_model/
+
+
+TROUBLESHOOTING
+===============
+
+Issue: "ModuleNotFoundError"
+Solution: Run: pip install -r requirements.txt
+
+Issue: "File not found: news_dataset.csv"
+Solution: Ensure data/news_dataset.csv exists
+
+Issue: "NLTK stopwords error"
+Solution: Script auto-fixes this, but if needed:
+  python -c "import nltk; nltk.download('stopwords')"
+
+Issue: "Permission denied"
+Solution: Ensure you have write access to project folder
+
+
+NEXT STEPS
+==========
+
+1. View the generated word clouds to understand topics
+2. Review cluster distribution to see data grouping
+3. Analyze PCA plot to visualize document relationships
+4. Use final_results.csv for your analysis
+5. Write your academic/technical report
+
+
+FILES YOU NEED TO KNOW
+======================
+
+Important Input Files:
+  - data/news_dataset.csv (must exist)
+
+Important Output Files:
+  - data/final_results.csv (all results combined)
+  - results/*.png (all visualizations)
+
+Important Documentation:
+  - README.md (read this first)
+  - HYPERPARAMETERS.md (if you want to modify settings)
+
+
+HOW LONG DOES IT TAKE?
+======================
+
+Typical execution time: 3-4 minutes
+
+Breakdown:
+  - Preprocessing: ~15 seconds
+  - Topic Modeling: ~1-2 minutes
+  - Clustering: ~30 seconds
+  - Visualization: ~60 seconds
+
+
+WHAT IF I WANT TO CHANGE SETTINGS?
+===================================
+
+Edit these files to customize:
+
+For number of topics:
+  - Edit topic_model.py, line: NUM_TOPICS = 8
+
+For number of clusters:
+  - Edit cluster.py, line: N_CLUSTERS = 8
+
+Then rerun:
+  - python scripts/topic_model.py (for topic changes)
+  - python scripts/cluster.py (for cluster changes)
+  - python scripts/visualize.py (to update charts)
+
+See HYPERPARAMETERS.md for detailed guidance.
+
+
+THAT'S IT!
+==========
+
+The project will:
+  1. Clean the data
+  2. Extract topics
+  3. Cluster documents
+  4. Create visualizations
+  5. Save all results
+
+Everything is automated. No further configuration needed.
+
+For questions, see:
+  - README.md (comprehensive guide)
+  - FINAL_SUMMARY.txt (what was done)
+  - Script comments (how things work)
